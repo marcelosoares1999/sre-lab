@@ -1,4 +1,4 @@
-# SRE Lab - 30 Dias para N2 | Joao Marcelo
+# SRE Lab - Treinamento P1/P0 com Evidências | Joao Marcelo Soares Siqueira
 
 *Objetivo*: Migrar de Suporte N1 para SRE N2 em 30 dias documentados.  
 *Stack*: Linux, Docker, Nginx, Python, Prometheus, GitHub Actions  
