@@ -10,16 +10,20 @@ Horário: 06:20
 sudo systemctl status nginx
 
  Resultado: inactive (dead)
+```
 
 ## 3. Causa Raiz
 Serviço não habilitado para iniciar com o boot.
 
 ## 4. Mitigação
+```bash
 sudo systemctl start nginx
 sudo systemctl enable nginx
-
+```
 ## 5. Prevenção
 Criar check de systemctl is-enabled nginx.
 
 ## 6. Comando chave
+```bash
 systemctl enable nginx
+```
