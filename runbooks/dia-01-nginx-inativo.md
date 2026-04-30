@@ -27,3 +27,23 @@ Criar check de systemctl is-enabled nginx.
 ```bash
 systemctl enable nginx
 ```
+
+## 7. Post-Mortem Blameless
+*Resumo*: nginx offline após reboot 06:20. HTTP 502.
+*Linha do tempo*: 06:20 Alerta → 06:21 Diagnóstico inactive → 06:22 Mitigação start+enable → 06:23 Validação 200 OK
+*Causa raiz*: Serviço não habilitado no systemd.
+*Ação preventiva*: Adicionar systemctl is-enabled nginx no checklist.
+
+## 8. Evidência
+*Antes:*
+● nginx.service
+   Loaded: loaded (/lib/systemd/system/nginx.service; disabled)
+   Active: inactive (dead)
+*Depois:*
+● nginx.service
+   Loaded: loaded (/lib/systemd/system/nginx.service; enabled)
+   Active: active (running)
+
+## 9. Sabotagem Controlada
+```bash
+sudo systemctl stop nginx && sudo systemctl disable nginx
