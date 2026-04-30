@@ -1,6 +1,6 @@
 # SRE Lab - Treinamento P1/P0 com Evidências | Joao Marcelo Soares Siqueira
 
-*Objetivo*: Migrar de Suporte N1 para SRE N2 em 30 dias documentados.  
+*Objetivo*: Migrar de Analista técnico para SRE N2 em 30 dias documentados.  
 *Stack*: Linux, Docker, Nginx, Python, Prometheus, GitHub Actions  
 *SLA Pessoal*: Disponibilidade 06:00-06:48 BRT, MTTR <15min  
 
@@ -8,7 +8,7 @@
 | Dia | Incidente | MTTR | Status | Artefato |
 | --- | --- | --- |
 | 0 | Setup Ubuntu + Git | - | OK | Commit inicial |
-| 1 | P1: Nginx Down | 2min | OK | [Runbook](./runbooks/nginx-down.md) |
+| 1 | P1: Nginx Down | 2min | OK | [Runbook](./runbooks/dia-01-nginx-inativo.md) |
 | 2 | A definir | - | Pendente | - |
 
 ## Filosofia SRE
