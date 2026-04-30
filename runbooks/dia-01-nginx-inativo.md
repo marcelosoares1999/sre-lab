@@ -1,4 +1,3 @@
-cat > dia-01-nginx-inativo.md << 'EOF'
 # P1: Nginx Inativo | 29/04/2026
 
 ## 1. Detecção
@@ -24,4 +23,3 @@ Criar check de systemctl is-enabled nginx.
 
 ## 6. Comando chave
 systemctl enable nginx
-  
